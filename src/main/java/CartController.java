@@ -15,8 +15,6 @@ public class CartController {
     public void addToCart(@PathVariable Long productId, @RequestBody User user) {
         Product productToAdd = getProductById(productId);
 
-        // Add your logic to handle adding the product to the user's cart
-        // ...
 
         System.out.println("Added product to cart: " + productToAdd.getName());
     }
@@ -25,8 +23,6 @@ public class CartController {
     public void removeFromCart(@PathVariable Long productId, @RequestBody User user) {
         Product productToRemove = getProductById(productId);
 
-        // Add your logic to handle removing the product from the user's cart
-        // ...
 
         System.out.println("Removed product from cart: " + productToRemove.getName());
     }
