@@ -36,7 +36,6 @@ public class CartController {
     }
 
     private Product getProductById(Long productId) {
-        // This is a simple example; in a real application, you would retrieve the product from a database
         return productList.stream()
                 .filter(product -> product.getId().equals(productId))
                 .findFirst()
