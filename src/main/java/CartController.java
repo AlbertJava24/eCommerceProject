@@ -31,7 +31,7 @@ public class CartController {
         List<Product> productList = new ArrayList<>();
         productList.add(new Product(1L, "Product A", 1));
         productList.add(new Product(2L, "Product B", 29.99));
-        // Add more products as needed
+
         return productList;
     }
 
